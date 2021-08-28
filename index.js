@@ -66,7 +66,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    // 
+    //  tdb fs.writeToFileSync(..., filenam, data);
 }
 
 // function to initialize program
