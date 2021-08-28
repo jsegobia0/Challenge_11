@@ -76,7 +76,7 @@ function init() {
 // THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
     .then((inquirerResponses) => {
         console.log("Generating README...");
-        writeToFile("READEME.md", generateMarkdown({...inquirerResponses}));
+        writeToFile("README.md", generateMarkdown({...inquirerResponses}));
     })
 
 }
