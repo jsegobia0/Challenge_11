@@ -10,8 +10,8 @@ const questions = [
  // WHEN I choose a license for my application from a list of options
     {
         type: "input",
-        name: "title",
-        message: "What is the title of your README?"
+        name: "license",
+        message: "What license are you using?"
     },
 // THEN a badge for that license is added near the top of the README
 
