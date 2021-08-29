@@ -67,7 +67,8 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-     fs.writeFile(`./${fileName.toUpperCase()}.md`, data);
+    fs.writeFileSync(`${fileName}.md`, data);
+
 }
 
 // function to initialize program
@@ -79,7 +80,6 @@ function init() {
         console.log("Generating README...");
         writeToFile("README", generateMarkdown({...inquirerResponses}))
         .then(() => console.log("Successfully wrote to README.md"))
-        .catch((err) => console.error(err));
     })
 
 }
