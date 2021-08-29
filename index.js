@@ -7,6 +7,14 @@ const generateMarkdown = require("./utils/generateMarkdown");
 // array of questions for user
 const questions = [
 
+ // WHEN I choose a license for my application from a list of options
+    {
+        type: "input",
+        name: "title",
+        message: "What is the title of your README?"
+    },
+// THEN a badge for that license is added near the top of the README
+
 // WHEN I enter my project title
     {
         type: "input",
