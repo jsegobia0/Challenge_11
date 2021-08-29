@@ -67,7 +67,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-     // tdb fs.writeToFileSync(..., filename, data);
+     fs.writeFile(`./${fileName.toUpperCase()}.md`, data);
 }
 
 // function to initialize program
@@ -77,7 +77,7 @@ function init() {
 // THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
     .then((inquirerResponses) => {
         console.log("Generating README...");
-        writeToFile("README.md", generateMarkdown({...inquirerResponses}))
+        writeToFile("README", generateMarkdown({...inquirerResponses}))
         .then(() => console.log("Successfully wrote to README.md"))
         .catch((err) => console.error(err));
     })
