@@ -1,3 +1,4 @@
+// GIVEN a command-line application that accepts user input
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
@@ -83,9 +84,3 @@ function init() {
 
 // function call to initialize program
 init();
-
-// GIVEN a command-line application that accepts user input
-
-// WHEN I click on the links in the Table of Contents
-
-// THEN I am taken to the corresponding section of the README
