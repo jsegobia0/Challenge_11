@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
+const { promisify } = require("util");
 
 // array of questions for user
 const questions = [
@@ -67,7 +68,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-     // tdb fs.writeToFileSync(..., filenam, data);
+   const tdb = fs.writeToFileSync(path, filename, data);
 }
 
 // function to initialize program
