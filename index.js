@@ -10,7 +10,7 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "Title of README?"
+        message: "What is the title of your README?"
     },
 // THEN this is displayed as the title of the README
 
