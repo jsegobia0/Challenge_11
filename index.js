@@ -49,7 +49,7 @@ const questions = [
 // WHEN I enter my GitHub username
 {
     type: "input",
-    name: "questions",
+    name: "github",
     message: "GitHub username?"
 },
 // THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
