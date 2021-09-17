@@ -87,8 +87,8 @@ function init() {
     .then((inquirerResponses) => {
         console.log("Generating README...");
         writeToFile("README", generateMarkdown({...inquirerResponses}))
-        .then(() => console.log("Successfully wrote to README.md"))
     })
+    .then(() => console.log("Successfully wrote to README.md"))
 
 }
 
