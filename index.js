@@ -89,7 +89,6 @@ function init() {
         writeToFile("README", generateMarkdown({...inquirerResponses}))
     })
     .then(() => console.log("Successfully wrote to README.md"))
-
 }
 
 // function call to initialize program
